@@ -1,20 +1,28 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>BMI Calculator</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="">
-            <h1 class="">Body Mass Index (BMI) Calculator</h1>
-            Height (cm):<br>
-            <input class="" id="" type="number" value="180" placeholder="Enter your height in cm.">
-            Weight (kg):<br>
-            <input class="" id="" type="number" value="80" placeholder="Enter your weight in kg.">
-            <button class="" id="">Compute BMI</button><br>
-            <input class="" id="" disabled type="number" value=""><br>
-            <p class="">Weight Condition: <span id=""></span> </p>
-        </div>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guess the Number</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>Guess the Number</h1>
+    <p>Guess a number between 1 and 100.</p>
+
+    <div class="stats">
+      <p>Attempts Left: <span id="attempts">10</span></p>
+      <p>Score: <span id="score">0</span></p>
+    </div>
+
+    <input type="number" id="guessInput" placeholder="Enter your guess" />
+    <button id="submitBtn">Submit Guess</button>
+    <button id="restartBtn">Restart Game</button>
+
+    <p id="message">Start guessing!</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
